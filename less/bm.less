@@ -1,0 +1,191 @@
+//
+// The Butcher's Market styles
+// --------------------------------------------------
+// Includes all custom styles for the site
+
+
+// Importing the Bootstrap styles
+@import "bootstrap/bootstrap.less";
+//@import "bootstrap/mixins/gradients.less";
+@import "bm-variables.less";
+
+// Importing custom fonts
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=La+Belle+Aurore);
+
+
+
+
+body {
+  //background: url(../images/bg.jpg);
+  background: black;
+}
+
+
+//== Main Navigation
+//
+
+.navbar {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: @font-size-medium;
+  background: url(../images/nav-bg.png) repeat;
+  //.horizontal(#555, #333, 0%, 100%);
+  //.horizontal();
+  .clearfix();
+
+  // Make the glyphicon font size smaller so it doesn't change the height of the navigation item
+  .glyphicon {
+    font-size: ceil((@font-size-medium * 0.75));
+  }
+
+  .dropdown-menu {
+    font-size: @font-size-medium;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    font-size: @font-size-large;
+
+    // Make the glyphicon font size smaller so it doesn't change the height of the navigation item
+    .glyphicon {
+      font-size: ceil((@font-size-large * 0.75));
+    }
+  }
+}
+
+
+.navbar-right {
+  margin-right: 0;
+}
+
+.navbar-collapse {
+  @media (min-width: @grid-float-breakpoint) {
+    padding-left: 0;
+    padding-right: 0;
+
+    // Adjust the space in between the left navigation items
+    .nav > li > a {
+      padding-left: 10px;
+      padding-right: 45px;
+    }
+
+    // Adjust the space in between the right navigation items
+    .nav.navbar-right > li > a {
+      padding-left: 15px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.bm-logo {
+  @logo-width: 180px;
+  @logo-height: 144px;
+
+  position: absolute;
+  z-index: 100;
+  display: block;
+  width: @logo-width;
+  height: @logo-height;
+  margin-left: -(@logo-width/2);
+  left: 50%;
+  text-indent: -20000px;
+  background: url(../images/logo-sm.png) no-repeat;
+
+  @media (min-width: @screen-lg-min) {
+    @logo-width: 301px;
+    @logo-height: 241px;
+
+    width: @logo-width;
+    height: @logo-height;
+    margin-left: -(@logo-width/2);
+    background: url(../images/logo.png) no-repeat;
+  }
+}
+
+
+//== Main Layout
+//
+.content-container {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: @carousel-max-width;
+
+  .jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+}
+
+.main-footer {
+  padding: 25px 0;
+  background: url(../images/nav-bg.png) repeat;
+  color: #fff;
+
+}
+
+.footer-column {
+  text-align: center;
+  margin-bottom: 20px;
+
+  strong,
+  span {
+    display: block;
+      }
+
+  strong {
+    color: #B4975C;
+    font-weight: normal;
+    font-size: @font-size-large;
+    // font-family: 'Oswald', sans-serif;
+    font-family: 'La Belle Aurore', cursive;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  @media (min-width: @screen-md-min) {
+    margin-bottom: 0;
+  }
+}
+
+
+
+//== Carousel
+//
+
+.carousel-container {
+  padding: 0;
+}
+
+.carousel {
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel .item {
+  background-color: #777;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  max-width: @carousel-max-width;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
