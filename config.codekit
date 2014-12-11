@@ -11,15 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/css\/bootstrap\/theme.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/bootstrap\/theme.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/images\/1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -29,7 +20,7 @@
 		"outputAbbreviatedPath": "\/images\/1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/2.jpg": {
 		"fileType": 16384,
@@ -40,7 +31,7 @@
 		"outputAbbreviatedPath": "\/images\/2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/3.jpg": {
 		"fileType": 16384,
@@ -51,7 +42,7 @@
 		"outputAbbreviatedPath": "\/images\/3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/4.jpg": {
 		"fileType": 16384,
@@ -62,7 +53,7 @@
 		"outputAbbreviatedPath": "\/images\/4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/5.jpg": {
 		"fileType": 16384,
@@ -73,7 +64,7 @@
 		"outputAbbreviatedPath": "\/images\/5.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/bg.jpg": {
 		"fileType": 16384,
@@ -84,7 +75,7 @@
 		"outputAbbreviatedPath": "\/images\/bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/facebooklogo.png": {
 		"fileType": 32768,
@@ -95,7 +86,7 @@
 		"outputAbbreviatedPath": "\/images\/facebooklogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/googlepluslogo.png": {
 		"fileType": 32768,
@@ -106,7 +97,7 @@
 		"outputAbbreviatedPath": "\/images\/googlepluslogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/instagramlogo.png": {
 		"fileType": 32768,
@@ -117,7 +108,7 @@
 		"outputAbbreviatedPath": "\/images\/instagramlogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/linkedinlogo.png": {
 		"fileType": 32768,
@@ -128,18 +119,7 @@
 		"outputAbbreviatedPath": "\/images\/linkedinlogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/logo-sm.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 44156,
-		"inputAbbreviatedPath": "\/images\/logo-sm.png",
-		"outputAbbreviatedPath": "\/images\/logo-sm.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/logo.png": {
 		"fileType": 32768,
@@ -150,7 +130,29 @@
 		"outputAbbreviatedPath": "\/images\/logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/images\/logo1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44156,
+		"inputAbbreviatedPath": "\/images\/logo1.png",
+		"outputAbbreviatedPath": "\/images\/logo1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/images\/nav--bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 151,
+		"inputAbbreviatedPath": "\/images\/nav--bg.png",
+		"outputAbbreviatedPath": "\/images\/nav--bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
 		},
 	"\/images\/nav-bg.png": {
 		"fileType": 32768,
@@ -161,7 +163,7 @@
 		"outputAbbreviatedPath": "\/images\/nav-bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/pinterestlogo.png": {
 		"fileType": 32768,
@@ -172,7 +174,7 @@
 		"outputAbbreviatedPath": "\/images\/pinterestlogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/tumblrlogo.png": {
 		"fileType": 32768,
@@ -183,7 +185,7 @@
 		"outputAbbreviatedPath": "\/images\/tumblrlogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/twitterlogo.png": {
 		"fileType": 32768,
@@ -194,7 +196,7 @@
 		"outputAbbreviatedPath": "\/images\/twitterlogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/vinelogo.png": {
 		"fileType": 32768,
@@ -205,7 +207,7 @@
 		"outputAbbreviatedPath": "\/images\/vinelogo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -303,7 +305,7 @@
 		"outputAbbreviatedPath": "\/css\/bm.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 2,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -1710,6 +1712,18 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
