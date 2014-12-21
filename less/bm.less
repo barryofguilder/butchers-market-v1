@@ -26,56 +26,30 @@ body {
 //== Main Navigation
 //
 
-.navbar {
-  margin-bottom: 0;
+.main-navigation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  bottom: 0;
+  padding: 20px;
+  text-align: right;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: @font-size-medium;
   background: url(../images/nav-bg.png) repeat;
-  //.horizontal(#555, #333, 0%, 100%);
-  //.horizontal();
-  .clearfix();
 
-  // Make the glyphicon font size smaller so it doesn't change the height of the navigation item
-  .glyphicon {
-    font-size: ceil((@font-size-medium * 0.75));
-  }
+  a {
+    color: #fff;
 
-  .dropdown-menu {
-    font-size: @font-size-medium;
+    &:hover,
+    &:active {
+      color: darken(#fff, 15%);
+    }
   }
 
   @media (min-width: @screen-lg-min) {
     font-size: @font-size-large;
-
-    // Make the glyphicon font size smaller so it doesn't change the height of the navigation item
-    .glyphicon {
-      font-size: ceil((@font-size-large * 0.75));
-    }
-  }
-}
-
-
-.navbar-right {
-  margin-right: 0;
-}
-
-.navbar-collapse {
-  @media (min-width: @grid-float-breakpoint) {
-    padding-left: 0;
-    padding-right: 0;
-
-    // Adjust the space in between the left navigation items
-    .nav > li > a {
-      padding-left: 10px;
-      padding-right: 45px;
-    }
-
-    // Adjust the space in between the right navigation items
-    .nav.navbar-right > li > a {
-      padding-left: 15px;
-      padding-right: 10px;
-    }
   }
 }
 
@@ -121,7 +95,7 @@ body {
 
 .main-footer {
   padding: 25px 0;
-  background: url(../images/nav-bg.png) repeat;
+  background: #000;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
@@ -139,7 +113,6 @@ body {
     color: #B4975C;
     font-weight: normal;
     font-size: @font-size-large;
-    // font-family: 'Oswald', sans-serif;
     font-family: 'La Belle Aurore', cursive;
   }
 
@@ -160,6 +133,7 @@ body {
 
 .carousel-container {
   padding: 0;
+  position: relative;
 }
 
 .carousel {
@@ -188,4 +162,5 @@ body {
   width: auto;
   height: auto;
   vertical-align: middle;
+  z-index: 100;
 }

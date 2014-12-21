@@ -2,6 +2,17 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18270",
 "files": {
+	"\/bootstrap.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bootstrap.min.js",
+		"outputAbbreviatedPath": "\/min\/bootstrap.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/css\/bm.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -66,17 +77,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/images\/bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 284280,
-		"inputAbbreviatedPath": "\/images\/bg.jpg",
-		"outputAbbreviatedPath": "\/images\/bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
 	"\/images\/facebooklogo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -128,28 +128,6 @@
 		"initialSize": 112657,
 		"inputAbbreviatedPath": "\/images\/logo.png",
 		"outputAbbreviatedPath": "\/images\/logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/images\/logo1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 44156,
-		"inputAbbreviatedPath": "\/images\/logo1.png",
-		"outputAbbreviatedPath": "\/images\/logo1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 1
-		},
-	"\/images\/nav--bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 151,
-		"inputAbbreviatedPath": "\/images\/nav--bg.png",
-		"outputAbbreviatedPath": "\/images\/nav--bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -245,29 +223,18 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/bootstrap.js",
-		"outputAbbreviatedPath": "\/js\/bootstrap\/min\/bootstrap-min.js",
+		"outputAbbreviatedPath": "\/js\/bootstrap\/bootstrap.min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/js\/bootstrap\/bootstrap.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/bootstrap\/bootstrap.min.js",
 		"outputAbbreviatedPath": "\/js\/bootstrap\/min\/bootstrap.min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/js\/bootstrap\/min\/bootstrap.min.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/bootstrap\/min\/bootstrap.min.js",
-		"outputAbbreviatedPath": "\/js\/bootstrap\/min\/min\/bootstrap.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1728,7 +1695,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Drew Miller",
+"lastSavedByUser": "Jason Barry",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1983,6 +1950,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"gcl": {
+			"active": false,
+			"flagValue": -1
+			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -2095,6 +2066,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"onevar": {
+			"active": false,
+			"flagValue": -1
+			},
 		"phantom": {
 			"active": 0,
 			"flagValue": -1
@@ -2131,8 +2106,8 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"singleGroups": {
-			"active": 0,
+		"smarttabs": {
+			"active": false,
 			"flagValue": -1
 			},
 		"strict": {
@@ -2147,6 +2122,10 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"trailing": {
+			"active": true,
+			"flagValue": -1
+			},
 		"typed": {
 			"active": 0,
 			"flagValue": -1
@@ -2157,6 +2136,10 @@
 			},
 		"unused": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"white": {
+			"active": false,
 			"flagValue": -1
 			},
 		"withstmt": {
