@@ -6,7 +6,6 @@
 
 // Importing the Bootstrap styles
 @import "bootstrap/bootstrap.less";
-//@import "bootstrap/mixins/gradients.less";
 @import "bm-variables.less";
 
 // Importing custom fonts
@@ -54,26 +53,24 @@ body {
 }
 
 .bm-logo {
-  @logo-width: 180px;
-  @logo-height: 144px;
+
 
   position: absolute;
-  z-index: 100;
+  z-index: 200;
   display: block;
-  width: @logo-width;
-  height: @logo-height;
-  margin-left: -(@logo-width/2);
+  width: @logo-width-sm;
+  height: @logo-height-sm;
+  margin-left: -(@logo-width-sm/2);
   left: 50%;
+  bottom: 0 - (@logo-height-sm/2);
   text-indent: -20000px;
-  background: url(../images/logo-sm.png) no-repeat;
+  background: url(../images/logo.png) no-repeat;
 
   @media (min-width: @screen-lg-min) {
-    @logo-width: 301px;
-    @logo-height: 241px;
-
     width: @logo-width;
     height: @logo-height;
     margin-left: -(@logo-width/2);
+    bottom: 0 - (@logo-height/2);
     background: url(../images/logo.png) no-repeat;
   }
 }
@@ -81,15 +78,13 @@ body {
 
 //== Main Layout
 //
-.content-container {
-  padding-left: 0;
-  padding-right: 0;
-  max-width: @carousel-max-width;
 
-  .jumbotron {
-    margin-bottom: 0;
-    border-radius: 0;
-    text-align: center;
+.main-content {
+  padding-top: @logo-height-sm/2;
+  text-align: center;
+
+  @media (min-width: @screen-lg-min) {
+    padding-top: @logo-height/2;
   }
 }
 
