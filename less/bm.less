@@ -34,7 +34,7 @@ body {
   text-align: right;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
-  font-size: @font-size-medium;
+  font-size: @nav-font-size-small;
   background: url(../images/nav-bg.png) repeat;
 
   a {
@@ -46,8 +46,12 @@ body {
     }
   }
 
+  @media (min-width: 1000px) {
+    font-size: @nav-font-size-medium;
+  }
+
   @media (min-width: @screen-lg-min) {
-    font-size: @font-size-large;
+    font-size: @nav-font-size-large;
   }
 }
 

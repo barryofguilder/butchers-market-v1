@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/1-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58920,
+		"inputAbbreviatedPath": "\/images\/1-sm.jpg",
+		"outputAbbreviatedPath": "\/images\/1-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/images\/1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -18,6 +29,17 @@
 		"initialSize": 207111,
 		"inputAbbreviatedPath": "\/images\/1.jpg",
 		"outputAbbreviatedPath": "\/images\/1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/images\/2-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48039,
+		"inputAbbreviatedPath": "\/images\/2-sm.jpg",
+		"outputAbbreviatedPath": "\/images\/2-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -33,6 +55,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/3-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61264,
+		"inputAbbreviatedPath": "\/images\/3-sm.jpg",
+		"outputAbbreviatedPath": "\/images\/3-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/images\/3.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -44,6 +77,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/4-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 111572,
+		"inputAbbreviatedPath": "\/images\/4-sm.jpg",
+		"outputAbbreviatedPath": "\/images\/4-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/images\/4.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -51,6 +95,17 @@
 		"initialSize": 198813,
 		"inputAbbreviatedPath": "\/images\/4.jpg",
 		"outputAbbreviatedPath": "\/images\/4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/images\/5-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66973,
+		"inputAbbreviatedPath": "\/images\/5-sm.jpg",
+		"outputAbbreviatedPath": "\/images\/5-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
@@ -141,7 +196,7 @@
 		"outputAbbreviatedPath": "\/images\/meat-section.jpeg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/nav-bg.png": {
 		"fileType": 32768,
@@ -1690,11 +1745,23 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Jason Barry",
+"lastSavedByUser": "Drew Miller",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -1949,10 +2016,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"gcl": {
-			"active": false,
-			"flagValue": -1
-			},
 		"globalstrict": {
 			"active": 0,
 			"flagValue": -1
@@ -2065,10 +2128,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"onevar": {
-			"active": false,
-			"flagValue": -1
-			},
 		"phantom": {
 			"active": 0,
 			"flagValue": -1
@@ -2105,8 +2164,8 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"smarttabs": {
-			"active": false,
+		"singleGroups": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"strict": {
@@ -2121,10 +2180,6 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"trailing": {
-			"active": true,
-			"flagValue": -1
-			},
 		"typed": {
 			"active": 0,
 			"flagValue": -1
@@ -2135,10 +2190,6 @@
 			},
 		"unused": {
 			"active": 1,
-			"flagValue": -1
-			},
-		"white": {
-			"active": false,
 			"flagValue": -1
 			},
 		"withstmt": {
