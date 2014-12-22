@@ -52,10 +52,8 @@ body {
 }
 
 .bm-logo {
-
-
   position: absolute;
-  z-index: 200;
+  z-index: 300;
   display: block;
   width: @logo-width-sm;
   height: @logo-height-sm;
@@ -81,10 +79,14 @@ body {
 .store-info {
   @info-padding: 25px;
 
-  padding: ((@logo-height-sm/2) + @info-padding) 0 @info-padding 0;
+  padding: ((@logo-height-sm/2) + @info-padding) 0 @info-padding;
   background: #000;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
+
+  @media (min-width: @screen-md-min) {
+    padding: 25px 0;
+  }
 }
 
 .info-column {
@@ -99,8 +101,12 @@ body {
   strong {
     color: #B4975C;
     font-weight: normal;
-    font-size: @font-size-large;
+    font-size: @font-size-medium;
     font-family: 'La Belle Aurore', cursive;
+
+    @media (min-width: @screen-lg-min) {
+      font-size: @font-size-large;
+    }
   }
 
   a {
