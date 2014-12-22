@@ -17,7 +17,6 @@
 
 
 body {
-  //background: url(../images/bg.jpg);
   background: black;
 }
 
@@ -79,23 +78,16 @@ body {
 //== Main Layout
 //
 
-.main-content {
-  padding-top: @logo-height-sm/2;
-  text-align: center;
+.store-info {
+  @info-padding: 25px;
 
-  @media (min-width: @screen-lg-min) {
-    padding-top: @logo-height/2;
-  }
-}
-
-.main-footer {
-  padding: 25px 0;
+  padding: ((@logo-height-sm/2) + @info-padding) 0 @info-padding 0;
   background: #000;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
 
-.footer-column {
+.info-column {
   text-align: center;
   margin-bottom: 20px;
 
@@ -121,6 +113,25 @@ body {
   }
 }
 
+.content-section {
+  font-size: 20px;
+  background: #fff;
+  padding: 50px 0;
+
+  &.alt-section {
+    background: @gray-lighter;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    padding: 75px 0;
+  }
+}
+
+.main-footer {
+  background: #000;
+  padding: 15px 0;
+  color: #fff;
+}
 
 
 //== Carousel
