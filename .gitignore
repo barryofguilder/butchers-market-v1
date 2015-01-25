@@ -1,5 +1,6 @@
 .DS_Store
-css
 .codekit-cache
-*.min.js
-README.html
+
+build
+node_modules
+bower_components
