@@ -74,6 +74,11 @@ module.exports = function(grunt) {
           {expand: true, src: ['index.html'], dest: 'build'}
         ]
       },
+      favicon: {
+        files: [
+          {expand: true, src: ['favicon.ico'], dest: 'build'}
+        ]
+      },
       fonts: {
         files: [
           {expand: true, flatten: true, src: ['bower_components/bootstrap/fonts/*.*'], dest: 'build/fonts'}
