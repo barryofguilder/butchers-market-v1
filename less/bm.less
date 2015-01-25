@@ -7,13 +7,13 @@
 // Importing the Bootstrap styles
 @import "bootstrap/bootstrap.less";
 @import "bm-variables.less";
+@import "app/fonts.less";
 
-// Importing custom fonts
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300);
-@import url(http://fonts.googleapis.com/css?family=La+Belle+Aurore);
-@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
-@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+@import "app/footer.less";
+@import "app/main-navigation.less";
+@import "app/sections.less";
+
 
 
 
@@ -136,13 +136,13 @@ body {
   }
 }
 
-.paragraph-title {
-  font-family: 'Oswald', sans-serif;
-}
-
 .cab-header {
   font-family: 'Kaushan Script', cursive;
   font-size: @font-size-large
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
 }
 
 .content-section {
@@ -163,10 +163,15 @@ body {
   border-top: #fff solid 10px;
   background: url(../images/contentbg1.png);
 }
+
+.package-prices {
+  padding: 20px 0;
+}
+
 .deli-section{
   border-top: #fff solid 10px;
   background: url(../images/contentbg2.png);
-  }
+}
 
 .additional-section-content{
   padding-top: 50px;
@@ -184,16 +189,16 @@ body {
 
 .content-bg {
   background: rgba(255, 255, 255, 0.5);
+  margin: 20px 0;
   padding: 10px;
   border-radius: 10px;
 }
 
 .cab-content-bg {
   background: url(../images/cab-content-bg.jpg);
-  padding: 10px;
-  border-radius: 10px;
   color: #fff;
   background-size: cover;
+  position: relative;
 }
 
 .cab-text {
@@ -206,10 +211,25 @@ body {
   font-size: @font-size-small;
 }
 
-.cab-logo {
-  margin-left: auto;
-  margin-right: auto;
+.cab-logo-column {
+  text-align: center;
+
+  @media (min-width: @screen-sm-min) {
+    text-align: right;
   }
+}
+
+.cab-logo {
+  width: 74px;
+  height: 75px;
+  margin-top: 10px;
+
+  @media (min-width: @screen-md-min) {
+    width: 243px;
+    height: 250px;
+    margin-top: 0;
+  }
+}
 
 //== Carousel
 //
