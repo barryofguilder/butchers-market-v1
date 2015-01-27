@@ -8,18 +8,18 @@ module.exports = function(grunt) {
       },
       css: {
         replace: ['build/**/*.html'],
-        replacement: 'bm.css',
-        file: 'build/css/bm.css'
+        replacement: 'bm-styles.css',
+        file: 'build/css/bm-styles.css'
       },
-      // scriptsApp: {
-      //   replace: ['build/**/*.html'],
-      //   replacement: 'bm.js',
-      //   file: 'build/js/bm.js'
-      // },
+      scriptsApp: {
+        replace: ['build/**/*.html'],
+        replacement: 'bm-scripts.js',
+        file: 'build/js/bm-scripts.js'
+      },
       scriptsVendor: {
         replace: ['build/**/*.html'],
-        replacement: 'vendor.js',
-        file: 'build/js/vendor.js'
+        replacement: 'vendor-scripts.js',
+        file: 'build/js/vendor-scripts.js'
       }
     },
 
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
           'bower_components/bootstrap/js/tab.js',
           'bower_components/bootstrap/js/affix.js'
         ],
-        dest: 'build/js/vendor.js',
+        dest: 'build/js/vendor-scripts.js',
       },
     },
 
@@ -91,7 +91,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: [
-          {expand: true, src: ['js/bm.js'], dest: 'build'}
+          {expand: true, src: ['js/bm-scripts.js'], dest: 'build'}
         ]
       }
     },
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
         eqeqeq: true,
         undef: true,
         devel: true,
-        ignores: ['js/vendor/*.js'],
+        ignores: [],
         globals: { }
       },
       files: {
@@ -126,15 +126,15 @@ module.exports = function(grunt) {
 
     less: {
       development: {
-        src: 'less/bm.less',
-        dest: 'build/css/bm.css'
+        src: 'less/bm-styles.less',
+        dest: 'build/css/bm-styles.css'
       },
       production: {
         options: {
           cleancss: true
         },
-        src: 'less/bm.less',
-        dest: 'build/css/bm.css'
+        src: 'less/bm-styles.less',
+        dest: 'build/css/bm-styles.css'
       }
     },
 
@@ -143,12 +143,12 @@ module.exports = function(grunt) {
         report: 'min'
       },
       app: {
-        src: 'build/js/bm.js',
-        dest: 'build/js/bm.js'
+        src: 'build/js/bm-scripts.js',
+        dest: 'build/js/bm-scripts.js'
       },
       vendor: {
-        src: 'build/js/vendor.js',
-        dest: 'build/js/vendor.js'
+        src: 'build/js/vendor-scripts.js',
+        dest: 'build/js/vendor-scripts.js'
       }
     },
 
@@ -199,5 +199,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default', ['clean:build', 'less:development', 'jshint', 'concat', 'copy', 'connect', 'watch']);
-  grunt.registerTask('build', ['clean:build', 'less:production', 'concat', 'imagemin', 'copy', 'uglify']);
+  grunt.registerTask('build', ['clean:build', 'less:production', 'concat', 'imagemin', 'copy', 'uglify', 'cache-busting']);
 };
