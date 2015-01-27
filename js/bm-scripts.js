@@ -7,13 +7,17 @@
 
   var theWindow = $(window),
       theCarousel = $('.carousel'),
-      carouselMaxWidth = 3840,  // Update to match carousel image width
-      carouselMaxHeight = 1513, // Update to match carousel image height
+      //carouselMaxWidth = 3840,  // Update to match carousel image width
+      //carouselMaxHeight = 1513, // Update to match carousel image height
+      carouselMaxWidth = 612,  // Update to match carousel image width
+      carouselMaxHeight = 397, // Update to match carousel image height
       carouselRatio = (carouselMaxHeight * 100) / carouselMaxWidth,
 
+      //carouselMobileBreakpoint = 850,// The width breakpoint for mobile carousel
+      //carouselMobileMaxWidth = 850,  // Update to match mobile carousel image width
       carouselMobileBreakpoint = 850,// The width breakpoint for mobile carousel
-      carouselMobileMaxWidth = 850,  // Update to match mobile carousel image width
-      carouselMobileMaxHeight = 814, // Update to match mobile carousel image height
+      carouselMobileMaxWidth = 612,  // Update to match mobile carousel image width
+      carouselMobileMaxHeight = 397, // Update to match mobile carousel image height
       carouselMobileRatio = (carouselMobileMaxHeight * 100) / carouselMobileMaxWidth;
 
   // Adjusts the size of the carousel based on the current window size
