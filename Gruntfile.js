@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         replacement: 'bm.css',
         file: 'build/css/bm.css'
       },
-      scriptsApp: {
-        replace: ['build/**/*.html'],
-        replacement: 'bm.js',
-        file: 'build/js/bm.js'
-      },
+      // scriptsApp: {
+      //   replace: ['build/**/*.html'],
+      //   replacement: 'bm.js',
+      //   file: 'build/js/bm.js'
+      // },
       scriptsVendor: {
         replace: ['build/**/*.html'],
         replacement: 'vendor.js',
@@ -170,7 +170,7 @@ module.exports = function(grunt) {
           spawn: false
         }
       },
-      html: {
+      images: {
         files: ['images/*.*'],
         tasks: ['copy:images'],
         options: {
@@ -199,5 +199,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.registerTask('default', ['clean:build', 'less:development', 'jshint', 'concat', 'copy', 'connect', 'watch']);
-  grunt.registerTask('build', ['clean:build', 'less:production', 'concat', 'imagemin', 'copy', 'uglify', 'cache-busting']);
+  grunt.registerTask('build', ['clean:build', 'less:production', 'concat', 'imagemin', 'copy', 'uglify']);
 };
