@@ -97,7 +97,7 @@ body {
   border-bottom: solid 10px black;
   text-align: center;
   margin-bottom: 0;
-  font-family: 'Oswald', sans-serif;
+  // font-family: 'Oswald', sans-serif;
   font-size: @font-size-medium;
 
   ul {
@@ -143,9 +143,10 @@ body {
   @info-padding: 25px;
 
   padding: ((@logo-height-sm/2) + @info-padding) 0 @info-padding;
-  background: #000;
+  //background: #000;
+  background: url(../images/top-bg.png);
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
 
   @media (min-width: @screen-md-min) {
     padding: 25px 0;
@@ -238,6 +239,29 @@ body {
   margin: 20px 0;
   padding: 10px;
   border-radius: 10px;
+}
+
+.salads {
+  background: rgba(77, 74, 16, 0.2);
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bh-about {
+  background: url(../images/deli-bg.jpg);
+  background-size: cover;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.bh-about-text {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .cab-header {
