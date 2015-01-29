@@ -76,7 +76,7 @@ module.exports = function(grunt) {
       },
       favicon: {
         files: [
-          {expand: true, src: ['favicon.ico'], dest: 'build'}
+          {expand: true, src: ['favicon.ico', 'apple-touch-icon.png'], dest: 'build'},
         ]
       },
       fonts: {
@@ -97,12 +97,18 @@ module.exports = function(grunt) {
     },
 
     imagemin: {
-      dynamic: {
+      images: {
         files: [{
           expand: true,
           cwd: 'images/',
-          src: ['*.*'],
+          src: ['images/*.{png,gif,jpg}'],
           dest: 'images/'
+        }]
+      },
+      favicon: {
+        files: [{
+          expand: true,
+          src: ['apple-touch-icon.png']
         }]
       }
     },
