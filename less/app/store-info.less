@@ -1,0 +1,49 @@
+//
+// Store Info
+// --------------------------------------------------
+//
+
+
+.store-info {
+  @info-padding: 25px;
+
+  position: relative;
+  padding: ((@logo-height-sm/2) + @info-padding) 0 @info-padding;
+  background: #000 url(../images/top-bg.png);
+  color: #fff;
+
+  @media (min-width: @screen-md-min) {
+    padding: 25px 0;
+  }
+}
+
+.info-column {
+  text-align: center;
+  margin-bottom: 20px;
+
+  strong,
+  span {
+    display: block;
+  }
+
+  strong {
+    color: #B4975C;
+    font-weight: normal;
+    font-size: @font-size-medium;
+    font-family: 'La Belle Aurore', cursive;
+
+    @media (min-width: @screen-lg-min) {
+      font-size: @font-size-large;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+
+  @media (min-width: @screen-md-min) {
+    margin-bottom: 0;
+  }
+}

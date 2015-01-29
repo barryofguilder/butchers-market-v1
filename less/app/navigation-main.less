@@ -1,0 +1,47 @@
+//
+// Navigation Main
+// --------------------------------------------------
+// The main navigation that will be overlaying the carousel
+
+
+.main-navigation {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  bottom: 0;
+  padding: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: @nav-font-size-small;
+  background: url(../images/nav-bg.png) repeat;
+
+  a {
+    color: #fff;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: darken(#fff, 15%);
+    }
+  }
+
+  @media (min-width: 100px) {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  @media (min-width: 350px) {
+    font-size: 21px;
+    padding: 5
+  }
+
+  @media (min-width: 1000px) {
+    font-size: @nav-font-size-medium;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    font-size: @nav-font-size-large;
+  }
+}

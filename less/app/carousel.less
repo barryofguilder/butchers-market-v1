@@ -1,0 +1,42 @@
+//
+// Carousel
+// --------------------------------------------------
+//
+
+
+.carousel-container {
+  padding: 0;
+  position: relative;
+}
+
+.carousel {
+  margin: 0 auto;
+}
+
+.package-carousel {
+  margin:0 auto;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel .item {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  max-width: @carousel-max-width;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  z-index: 100;
+}

@@ -1,0 +1,68 @@
+//
+// Navigation Secondary
+// --------------------------------------------------
+// The secondary navigation that is temporarily there until the main carousel is in place
+
+
+.bm-logo {
+  position: absolute;
+  z-index: 300;
+  display: block;
+  width: @logo-width-sm;
+  height: @logo-height-sm;
+  margin-left: -(@logo-width-sm/2);
+  left: 50%;
+  top: 5px;
+  text-indent: -20000px;
+  background: url(../images/logo-sm.png) no-repeat;
+
+  @media (min-width: @screen-lg-min) {
+    width: @logo-width;
+    height: @logo-height;
+    margin-left: -(@logo-width/2);
+    top: 5px;
+    background: url(../images/logo-sm.png) no-repeat;
+  }
+}
+
+.secondary-navigation {
+  background: #c6a86a;
+  border-bottom: solid 10px black;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: @font-size-medium;
+  text-transform: uppercase;
+
+  ul {
+    display: block;
+    margin-bottom: 0;
+    .clearfix();
+
+    @media (min-width: @screen-md-min) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  li {
+    float: left;
+    width: 50%;
+
+    @media (min-width: @screen-md-min) {
+      width: inherit;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      background: #DFDBD3;
+    }
+  }
+}

@@ -16,7 +16,8 @@
   </head>
   <body>
 
-    <!--  <div class="container-fluid carousel-container">
+    <!--
+    <div class="container-fluid carousel-container">
       <a class="bm-logo" href="/">The Butcher's Market</a>
 
       <nav class="main-navigation" role="navigation">
@@ -51,12 +52,11 @@
       </div>
     </div>
     -->
-    <div class="container-fluid carousel-container">
-      <a class="bm-logo" href="/">The Butcher's Market</a>
-    </div>
 
     <div class="store-info">
       <div class="container content-container">
+        <a class="bm-logo" href="/">The Butcher's Market</a>
+
         <div class="row">
           <div class="col-md-5">
             <div class="row">
@@ -97,17 +97,17 @@
     <nav class="secondary-navigation">
       <div class="container">
         <ul class="list-unstyled secondary-navigation-items">
-          <li><a href="#">MEAT</a></li>
-          <li><a href="#">DELI</a></li>
-          <li><a href="#">GROCERY</a></li>
-          <li><a href="#">DINING</a></li>
-          <li><a href="#">BEVERAGE</a></li>
-          <li><a href="#">MORE</a></li>
+          <li><a href="#meat">Meat</a></li>
+          <li><a href="#deli">Deli</a></li>
+          <li><a href="#grocery">Grocery</a></li>
+          <li><a href="#dining">Dining</a></li>
+          <li><a href="#beverage">Beverage</a></li>
+          <li><a href="#more">More</a></li>
         </ul>
       </div>
     </nav>
 
-    <div class="content-section meat-section">
+    <div id="meat" class="content-section meat-section">
       <div class="container">
         <div class="row content-bg cab-content-bg">
 
@@ -130,24 +130,19 @@
 
         <div class="row content-bg">
           <div class="col-md-7">
-
-
-             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-image-size="normal">
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="images/bmbundlepacks.png" alt="First slide">
-          </div>
-          <div class="item">
-            <img src="images/bmmixnmatch.png" alt="Second slide">
-          </div>
-          <div class="item">
-            <img src="images/bmicebox.png" alt="Third slide">
-          </div>
-          
-        </div>
-      </div>
-
-
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-image-size="normal">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/bmbundlepacks.png" alt="First slide">
+                </div>
+                <div class="item">
+                  <img src="images/bmmixnmatch.png" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img src="images/bmicebox.png" alt="Third slide">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-5 cab-text">
             <h1 class="cab-header">Bundle Packages!</h1>
@@ -207,7 +202,7 @@
       </div>
     </div>
 
-    <div class="content-section deli-section">
+    <div id="deli" class="content-section deli-section">
       <div class="container">
         <div class="row bh-about">
           <div class="col-md-5">
@@ -225,7 +220,7 @@
         </div>
         <div class="row salads">
           <div class="col-md-2">
-           <img src="images/salads.png" class="img-responsive img-rounded"/>Rotisserie Chicken Salad
+            <img src="images/salads.png" class="img-responsive img-rounded"/>Rotisserie Chicken Salad
           </div>
           <div class="col-md-2">
             <img src="images/salads.png" class="img-responsive img-rounded"/>Hawiian Chicken Salad
@@ -242,11 +237,8 @@
           <div class="col-md-2">
             <img src="images/salads.png" class="img-responsive img-rounded"/>Itatlian Pasta Salad
           </div>
-
-
-
           <div class="col-md-2">
-           <img src="images/salads.png" class="img-responsive img-rounded"/>Pimento Cheese
+            <img src="images/salads.png" class="img-responsive img-rounded"/>Pimento Cheese
           </div>
           <div class="col-md-2">
             <img src="images/salads.png" class="img-responsive img-rounded"/>Fresh Salsa
@@ -263,7 +255,6 @@
           <div class="col-md-2">
             <img src="images/salads.png" class="img-responsive img-rounded"/>Bacon Ranch Potato Salad
           </div>
-
           <div class="col-md-2">
             <img src="images/salads.png" class="img-responsive img-rounded"/>Corn Salad
           </div>
@@ -297,14 +288,9 @@
           <div class="col-md-2">
             <img src="images/salads.png" class="img-responsive img-rounded"/>Twice Baked Sweet Potato
           </div>
-
         </div>
       </div>
     </div>
-
-        
-
-
 
     <footer class="main-footer">
       <div class="container">
