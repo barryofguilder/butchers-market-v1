@@ -15,20 +15,10 @@
   border-radius: 10px;
 }
 
-.bh-about {
-  background: url(../images/deli-bg.jpg);
-  background-size: cover;
-  margin: 20px 0;
-  padding: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  color: #fff;
-}
-
 .bh-about-text {
   background: rgba(0, 0, 0, 0.75);
-  padding: 10px;
-  border-radius: 10px;
+  padding: @padding;
+  border-radius: @radius;
   color: #fff;
 }
 
@@ -38,4 +28,18 @@
   @media (min-width: @screen-md-min) {
     margin-bottom: 0;
   }
+}
+
+.deli-item {
+  padding-bottom: @padding;
+}
+
+.deli-item-title {
+  display: block;
+  font-size: ceil((@font-size-base * 1.2));
+}
+
+.deli-item-description {
+  display: block;
+  font-size: @font-size-base;
 }
