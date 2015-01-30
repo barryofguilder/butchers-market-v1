@@ -3,22 +3,16 @@
 // --------------------------------------------------
 //
 
-.deli-heading {
-  //background: url(../images/brown-bg.jpg);
-  margin-bottom: 20px;
-}
+
 .section-deli {
   border-top: #fff solid 10px;
   background: url(../images/brown-bg.png);
 }
 
-.salads {
-  background: rgba(77, 74, 16, 0.2);
-  margin: 20px 0;
-  padding: 10px;
+.bubble-body-bh {
+  background: url(../images/deli-bg.jpg);
+  background-size: cover;
   border-radius: 10px;
-  color: #000;
-  font-size: @font-size-medium;
 }
 
 .bh-about {
@@ -26,7 +20,8 @@
   background-size: cover;
   margin: 20px 0;
   padding: 10px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   color: #fff;
 }
 
@@ -35,4 +30,12 @@
   padding: 10px;
   border-radius: 10px;
   color: #fff;
+}
+
+.bh-logo-column {
+  margin-bottom: @padding;
+
+  @media (min-width: @screen-md-min) {
+    margin-bottom: 0;
+  }
 }
