@@ -34,14 +34,60 @@
   padding-bottom: @padding;
 }
 
-.deli-item-title {
-  display: block;
-  font-size: ceil((@font-size-base * 1.2));
+.deli-image-container {
+  display: table-cell;
+  position: relative;
 }
 
-.deli-item-description {
+.deli-item-btn {
+  @deli-btn-height: 20px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: rgba(79, 78, 78, 0.8);
+  color: #cecece;
+  font-size: 11px;
+  height: @deli-btn-height;
+  border-bottom-right-radius: 6px; // match the .img-rounded
+  border-top-left-radius: 6px; // match the .img-rounded
+  padding: 2px 10px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #cecece;
+    text-decoration: none;
+  }
+
+  .glyphicon {
+    font-size: 13px;
+  }
+}
+
+.deli-item-title {
+  padding-top: @padding/2;
   display: block;
-  font-size: @font-size-base;
+  font-size: ceil((@font-size-base * 1.1));
+}
+
+.deli-item-modal {
+  .modal-body {
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+      margin-bottom: @padding;
+    }
+
+    @media (min-width: @screen-md-min) {
+      text-align: left;
+
+      img {
+        margin: 0;
+      }
+    }
+  }
 }
 
 .section-bubble-platters {
@@ -56,3 +102,4 @@
   border-bottom-right-radius: @radius;
   color: #fff;
 }
+
