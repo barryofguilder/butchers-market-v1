@@ -1,20 +1,29 @@
 //
-// The Butcher's Market JavaScript
+// Carousel
 // --------------------------------------------------
-// Includes all JavaScript for the site
+//
 
-(function($) {
+
+butcher.carousel = function ($) {
+
+  // Things to do once the page has loaded.
+  //
+  $(function() {
+
+    adjustCarouselSize();
+
+    $(window).resize(function() {
+      adjustCarouselSize();
+    });
+
+  });
 
   var theWindow = $(window),
       theCarousel = $('.carousel'),
-      //carouselMaxWidth = 3840,  // Update to match carousel image width
-      //carouselMaxHeight = 1513, // Update to match carousel image height
       carouselMaxWidth = 612,  // Update to match carousel image width
       carouselMaxHeight = 397, // Update to match carousel image height
       carouselRatio = (carouselMaxHeight * 100) / carouselMaxWidth,
 
-      //carouselMobileBreakpoint = 850,// The width breakpoint for mobile carousel
-      //carouselMobileMaxWidth = 850,  // Update to match mobile carousel image width
       carouselMobileBreakpoint = 850,// The width breakpoint for mobile carousel
       carouselMobileMaxWidth = 612,  // Update to match mobile carousel image width
       carouselMobileMaxHeight = 397, // Update to match mobile carousel image height
@@ -70,13 +79,4 @@
     }
   }
 
-  // Things to do once the page has loaded.
-  //
-  $(function() {
-    adjustCarouselSize();
-
-    $(window).resize(function() {
-      adjustCarouselSize();
-    });
-  });
-})(window.jQuery);
+} (window.jQuery);

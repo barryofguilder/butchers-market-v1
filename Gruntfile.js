@@ -45,6 +45,13 @@ module.exports = function(grunt) {
       options: {
         separator: '\n;\n'
       },
+      app: {
+        src: [
+          'js/app.js',
+          'js/app/**/*.js'
+        ],
+        dest: 'build/js/bm-scripts.js'
+      },
       vendor: {
         src: [
           // jQuery
@@ -86,12 +93,7 @@ module.exports = function(grunt) {
       },
       images: {
         files: [
-          {expand: true, src: ['images/*.*'], dest: 'build'}
-        ]
-      },
-      scripts: {
-        files: [
-          {expand: true, src: ['js/bm-scripts.js'], dest: 'build'}
+          {expand: true, src: ['images/**/*.*'], dest: 'build'}
         ]
       }
     },
@@ -101,7 +103,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'images/',
-          src: ['images/*.{png,gif,jpg}'],
+          src: ['images/**/*.{png,gif,jpg}'],
           dest: 'images/'
         }]
       },
@@ -123,7 +125,9 @@ module.exports = function(grunt) {
         undef: true,
         devel: true,
         ignores: [],
-        globals: { }
+        globals: {
+          butcher: true
+        }
       },
       files: {
         src: ['js/**/*.js']
@@ -177,7 +181,7 @@ module.exports = function(grunt) {
         }
       },
       images: {
-        files: ['images/*.*'],
+        files: ['images/**/*.*'],
         tasks: ['copy:images'],
         options: {
           spawn: false
@@ -185,7 +189,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: 'js/**/*.js',
-        tasks: ['jshint', 'copy:scripts'],
+        tasks: ['jshint', 'concat:app'],
         options: {
           spawn: false
         }
