@@ -1,0 +1,24 @@
+//
+// Go Top
+// --------------------------------------------------
+// Button that takes you to the top of the page
+
+
+.go-top {
+	position: fixed;
+	bottom: @padding;
+	right: @padding;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: @padding;
+	display: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: rgba(0, 0, 0, 0.6);
+		text-decoration: none;
+		color: #fff;
+	}
+}
