@@ -3,18 +3,34 @@
 // --------------------------------------------------
 //
 
+.section-top {
+  //border-bottom: 5px solid #fff;
+  position: relative;
+  min-height: 150px;
+}
+
+.section-top-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.wine {
+  background: #fff;
+}
+
+
 
 .section {
-  font-size: 20px;
-  background: #fff;
   padding: 50px 0;
+  background: @gray-lighter;
 
   &.alt-section {
     background: @gray-lighter;
   }
 
   @media (min-width: @screen-lg-min) {
-    padding: 75px 0;
+    padding: 100px 0;
   }
 }
 
@@ -23,13 +39,13 @@
 }
 
 .section-bubble {
-  margin: 20px 0;
-  border-radius: @radius;
+  //margin: 20px 0;
+  //border-radius: @radius;
 }
 
 .section-bubble-header {
   background: rgba(0, 0, 0, 0.6);
-  .border-top-radius(@radius);
+  //.border-top-radius(@radius);
   padding: 15px;
   color: #fff;
 
@@ -46,7 +62,7 @@
   padding: @padding;
   //background: rgba(77, 74, 16, 0.2);
 
-  .border-bottom-radius(@radius);
+  //.border-bottom-radius(@radius);
 
   > .row {
     margin-right: 0;
