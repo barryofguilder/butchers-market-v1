@@ -10,7 +10,7 @@ butcher.itemDescriptionModal = function ($) {
   //
   $(function() {
 
-    $('.product-item').on('click', '.product-item-btn', function (e) {
+    $('.product-item').on('click', '.item-info-btn', function (e) {
       // Prevent the anchor tag from doing it's default action
       e.preventDefault();
 
