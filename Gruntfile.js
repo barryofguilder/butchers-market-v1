@@ -78,7 +78,8 @@ module.exports = function(grunt) {
     copy: {
       html: {
         files: [
-          {expand: true, src: ['index.html'], dest: 'build'}
+          {expand: true, src: ['index.html'], dest: 'build'},
+          {expand: true, src: ['components/**/*.html'], dest: 'build'}
         ]
       },
       favicon: {
@@ -174,7 +175,7 @@ module.exports = function(grunt) {
         }
       },
       html: {
-        files: ['*.html'],
+        files: ['*.html', 'components/**/*.html'],
         tasks: ['copy:html'],
         options: {
           spawn: false
