@@ -69,7 +69,10 @@ module.exports = function(grunt) {
           'bower_components/bootstrap/js/popover.js',
           'bower_components/bootstrap/js/scrollspy.js',
           'bower_components/bootstrap/js/tab.js',
-          'bower_components/bootstrap/js/affix.js'
+          'bower_components/bootstrap/js/affix.js',
+
+          // jQuery Visible
+          'bower_components/jquery-visible/jquery.visible.js'
         ],
         dest: 'build/js/vendor-scripts.js',
       },
@@ -78,7 +81,8 @@ module.exports = function(grunt) {
     copy: {
       html: {
         files: [
-          {expand: true, src: ['index.html'], dest: 'build'}
+          {expand: true, src: ['index.html'], dest: 'build'},
+          {expand: true, src: ['components/**/*.html'], dest: 'build'}
         ]
       },
       favicon: {
@@ -174,7 +178,7 @@ module.exports = function(grunt) {
         }
       },
       html: {
-        files: ['*.html'],
+        files: ['*.html', 'components/**/*.html'],
         tasks: ['copy:html'],
         options: {
           spawn: false
