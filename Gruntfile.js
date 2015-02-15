@@ -79,12 +79,6 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      html: {
-        files: [
-          {expand: true, src: ['index.html'], dest: 'build'},
-          {expand: true, src: ['components/**/*.html'], dest: 'build'}
-        ]
-      },
       favicon: {
         files: [
           {expand: true, src: ['favicon.ico', 'apple-touch-icon.png'], dest: 'build'},
@@ -95,9 +89,20 @@ module.exports = function(grunt) {
           {expand: true, flatten: true, src: ['bower_components/bootstrap/fonts/*.*'], dest: 'build/fonts'}
         ]
       },
+      html: {
+        files: [
+          {expand: true, src: ['index.html'], dest: 'build'},
+          {expand: true, src: ['components/**/*.html'], dest: 'build'}
+        ]
+      },
       images: {
         files: [
           {expand: true, src: ['images/**/*.*'], dest: 'build'}
+        ]
+      },
+      php: {
+        files: [
+          {expand: true, src: ['*.php'], dest: 'build'}
         ]
       }
     },
@@ -187,6 +192,13 @@ module.exports = function(grunt) {
       images: {
         files: ['images/**/*.*'],
         tasks: ['copy:images'],
+        options: {
+          spawn: false
+        }
+      },
+      php: {
+        files: ['*.php'],
+        tasks: ['copy:php'],
         options: {
           spawn: false
         }
