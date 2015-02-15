@@ -23,16 +23,21 @@
   }
 }
 
-.catering-disclaimer{
+.catering-modal {
+  .catering-disclaimer{
     padding-top: @padding * 2;
-  font-size: ceil(@font-size-base * 0.7);
-
-  h2 {
     font-size: ceil(@font-size-base * 0.7);
-    font-weight: bold;
-    margin: 0;
-  }
 
+    h2 {
+      font-size: ceil(@font-size-base * 0.7);
+      font-weight: bold;
+      margin: 0;
+    }
+
+    li {
+      padding: 5px 0;
+    }
+  }
 }
 
 .deli-item {
@@ -75,4 +80,20 @@
   padding-top: @padding/2;
   display: block;
   font-size: ceil((@font-size-base * 1.1));
+}
+
+
+.bbq-feast-modal {
+  .feast-sides {
+    padding-top: 15px;
+  }
+
+  .feast-disclaimer {
+    padding-top: @padding * 2;
+    font-size: ceil(@font-size-base * 0.7);
+
+    li {
+      padding: 5px 0;
+    }
+  }
 }
