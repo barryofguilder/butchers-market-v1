@@ -10,7 +10,7 @@ butcher.emailModal = function ($) {
   //
   $(function() {
 
-    $(document).on('click', '.email-us', function (e) {
+    $(document).on('click', '.contact-us', function (e) {
       // Prevent the anchor tag from doing it's default action
       e.preventDefault();
 
@@ -31,6 +31,11 @@ butcher.emailModal = function ($) {
 
         emailModal.on('shown.bs.modal', function () {
           handleSubmit();
+          checkForRequired();
+
+          grecaptcha.render('recaptcha', {
+            'sitekey' : '6LcrHAITAAAAACvTiT4qS4dvbwL7wgGRXhJtsKim'
+          });
         });
       }
     });
@@ -41,25 +46,71 @@ butcher.emailModal = function ($) {
       // Prevent the form from doing it's default action
       e.preventDefault();
 
+      var form = $(this);
+
       $.ajax({
         type: 'POST',
-        url: 'email.php',
-        data: $(this).serialize(),
+        url: 'server/email.php',
+        data: form.serialize(),
         success: function(response){
           var data = $.parseJSON(response);
-          console.log(data);
 
           if (data.error) {
-            $('#email-log').html(data.message);
+            showErrorMessage(true, data.message);
+            handleFormErrors(form, data.fields);
+          } else {
+            $('#email-modal').modal('hide');
           }
-
-          //$('#email-log').html(msg);
-          //$('#email-modal').modal('hide');
         },
         error: function(){
-          alert("failure");
+          showErrorMessage(true, "Something went wrong trying to submit.  Please try again later.");
         }
       });
+    });
+  }
+
+  function checkForRequired() {
+    $('#email-form').on('blur', '.form-group.required', function() {
+      var field = $(this).find('.form-control'),
+          group = field.parents('.form-group');
+
+      if (field.val() === '') {
+        group.addClass('has-error');
+      } else {
+        group.removeClass('has-error');
+      }
+    });
+  }
+
+  function clearErrors(form) {
+    var groups = form.find('.form-group');
+
+    groups.each(function() {
+      $(this).removeClass('has-error');
+    });
+  }
+
+  function showErrorMessage(show, message) {
+    if (show) {
+      $('#email-errors .alert').html(message);
+      $('#email-errors').removeClass('hidden');
+    } else {
+      $('#email-errors').addClass('hidden');
+    }
+  }
+
+  function handleFormErrors(form, fields) {
+    clearErrors(form);
+
+    var fieldNames = fields.split(',');
+
+    $.each(fieldNames, function(index, value) {
+      if (value.trim() === '') {
+        return;
+      }
+
+      var group = form.find('[name="' + value + '"]').parents('.form-group');
+      group.addClass('has-error');
     });
   }
 

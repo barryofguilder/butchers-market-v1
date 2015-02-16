@@ -1,0 +1,24 @@
+//
+// Forms
+// --------------------------------------------------
+//
+
+
+label {
+  .required {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+.has-error {
+  label {
+    color: @state-danger-text;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea, {
+    background: @state-danger-bg;
+  }
+}

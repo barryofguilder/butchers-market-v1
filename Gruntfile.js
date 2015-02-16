@@ -102,7 +102,7 @@ module.exports = function(grunt) {
       },
       php: {
         files: [
-          {expand: true, src: ['*.php'], dest: 'build'}
+          {expand: true, src: ['server/**/*.php'], dest: 'build'}
         ]
       }
     },
@@ -135,7 +135,8 @@ module.exports = function(grunt) {
         devel: true,
         ignores: [],
         globals: {
-          butcher: true
+          butcher: true,
+          grecaptcha: true
         }
       },
       files: {
@@ -197,7 +198,7 @@ module.exports = function(grunt) {
         }
       },
       php: {
-        files: ['*.php'],
+        files: ['server/**/*.php'],
         tasks: ['copy:php'],
         options: {
           spawn: false
