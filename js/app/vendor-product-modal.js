@@ -59,8 +59,13 @@ butcher.vendorProductModal = function ($) {
     var itemLink = itemModal.find('#item-link'),
         link = button.data('item-link');
 
-    itemLink.attr('href', link);
+    // Hide the link if url wasn't given
+    if (!link) {
+      itemLink.hide();
+      return;
+    }
 
+    itemLink.attr('href', link);
     link = link.replace("http://", "");
     link = link.replace("https://", "");
 
