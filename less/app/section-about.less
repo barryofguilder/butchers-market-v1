@@ -3,43 +3,43 @@
 	background-size: cover;
 }
 
- .about-text {
- 	background: rgba(0, 0, 0, 0.65);
-  	padding: @padding;
-  	color: #fff;
-  	text-align: center;
+.about-text {
+	background: rgba(0, 0, 0, 0.65);
+	padding: @padding;
+	color: #fff;
+	text-align: center;
 
-  	p {
-  		margin: 50px;
-  	}
-  }
+	p {
+		margin: 50px;
+	}
+}
 
+.social-icons {
+	font-family: 'social';
+	font-size: 35px;
+	margin: 0 auto;
+	display: inline-block;
+	.clearfix();
 
-  .instagram {
-    font-family: 'social-circles';
-    font-size: 30px;
-  }
-  .social-icons {
-  	font-family: 'social';
-  	font-size: 35px;
-  	margin: 0 auto;
-  	display: inline-block;
+	li {
+		float: left;
+	}
 
-  	.clearfix();
+	a {
+		display: block;
+		margin: 0 5px;
+		color: #fff;
+		&:hover,
+		&:focus,
+		&:active {
+			color:#000;
+			text-decoration: none;
+		}
+	}
+}
 
-  	li {
-  		float: left;
-  	}
-
-  	a {
-  		display: block;
-  		margin: 0 5px;
-  		color: #fff;
-  		&:hover, 
-  		&:focus,
-  		&:active {
-  			color:#000;
-  			text-decoration: none;
-  		}
-  	}
-  }
+.instagram {
+  font-family: 'social-circles';
+  font-size: 26px;
+  padding-top: 8px;
+}
