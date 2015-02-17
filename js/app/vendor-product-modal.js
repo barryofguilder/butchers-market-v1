@@ -66,10 +66,6 @@ butcher.vendorProductModal = function ($) {
     }
 
     itemLink.attr('href', link);
-    link = link.replace("http://", "");
-    link = link.replace("https://", "");
-
-    itemLink.html(link);
   }
 
 } (window.jQuery);
