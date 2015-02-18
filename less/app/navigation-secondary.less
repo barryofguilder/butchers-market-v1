@@ -32,19 +32,19 @@
   margin-bottom: 0;
   font-size: @font-size-medium;
   text-transform: uppercase;
+}
 
-  ul {
-    display: block;
-    margin-bottom: 0;
-    .clearfix();
+.secondary-navigation-items {
+  display: block;
+  margin-bottom: 0;
+  .clearfix();
 
-    @media (min-width: @screen-md-min) {
-      display: inline-block;
-      vertical-align: middle;
-    }
+  @media (min-width: @screen-md-min) {
+    display: inline-block;
+    vertical-align: middle;
   }
 
-  li {
+  > li {
     float: left;
     width: 50%;
 
@@ -66,3 +66,4 @@
     }
   }
 }
+
