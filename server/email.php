@@ -12,7 +12,7 @@ require_once "recaptcha/secret_key.php";
 $siteKey = "6LcrHAITAAAAACvTiT4qS4dvbwL7wgGRXhJtsKim";
 
 // Email address where the message should be delivered
-$emailTo = 'thebutchersmarket@gmail.com';
+$emailTo = 'drew@thebutchersmarket.com';
 
 // From email address, in case your server prohibits sending emails from addresses other than those of your
 // own domain (e.g. email@yourdomain.com). If this is used then all email messages from your contact form will appear
