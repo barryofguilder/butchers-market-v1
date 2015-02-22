@@ -112,6 +112,11 @@ module.exports = function(grunt) {
           {expand: true, src: ['fonts/*.*'], dest: '<%= paths.dest %>'}
         ]
       },
+      html: {
+        files: [
+          {expand: true, src: ['components/**/*.html'], dest: 'build'}
+        ]
+      },
       images: {
         files: [
           {expand: true, src: ['images/**/*.*'], dest: '<%= paths.dest %>'}

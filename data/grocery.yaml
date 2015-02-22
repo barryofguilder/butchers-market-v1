@@ -1,0 +1,48 @@
+items:
+  - title: Butcher's Market Homemade BBQ Sauce
+    image: images/bmbbqsauce.jpg
+    vendor: false
+    description: Unable to find a BBQ sauce we felt to be suitable for our BBQ we created our own! Handmade from scratch right in our store it is sweet and tangy with just enough spice!
+
+  - title: "Butcher's Market Rib Rub & Kickin' Chicken"
+    image: images/bmbbqsauce.jpg
+    vendor: false
+    description: Used on all of our BBQ, our private label rub is garaunteed to make your ribs, chicken, and basically anything else a hit!
+
+  - title: Butcher's Market Signature Spices
+    image: images/bmspices.jpg
+    vendor: false
+    description: make your evening meal quick and easy with our meal portioned spice packets. Currently available - Spaghetti, Chili, Taco & Fajita
+
+  - title: Butcher's Market Meal Spice Packets
+    image: images/bmspicepacks.jpg
+    vendor: false
+    description:
+
+  - title: Amish Wedding Canned Goods
+    image: images/amishwedding.jpg
+    vendor: true
+    description:
+    link: http://www.troyercheese.com/amishweddingfoods.htm
+
+  - title: Bad Byron's Butt Rub
+    image: images/buttrub.jpg
+    vendor: true
+    description:
+    link: http://www.buttrub.com
+
+  - title: Local Raw Honey
+    image: images/honey.jpg
+    vendor: false
+    description:
+
+  - title: Bone Suckin' Sauces and Rubs
+    image: images/bonesuckin.jpg
+    vendor: true
+    description:
+    link: http://www.bonesuckin.com
+
+  - title: Assorted Produce
+    image: images/produce.jpg
+    vendor: false
+    description:

@@ -1,0 +1,24 @@
+<div id="grocery" class="section section-grocery">
+  <div class="section-title">
+    <div class="container">
+      <h1>GROCERY</h1>
+    </div>
+  </div>
+
+  <div class="section-description">
+    <div class="container">
+      <p>We also stock a variety of specialty as well as everyday grocery &amp; produce items.</p>
+      <p>Below are some of our featured items</p>
+    </div>
+  </div>
+
+  <div class="section-body section-grocery-content">
+    <div class="container">
+      <div class="row">
+        {{#each grocery.items}}
+          {{> grocery-item}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
