@@ -1,0 +1,16 @@
+<div class="section-description">
+  <div class="container">
+    <h2>Non-Alcoholic</h2>
+    <p>Beer, wine, and spirits aren't the only beverage that can be enjoyed... We have a large selection of hand crafted/ specialty non-alcoholic drinks to choose from as well!</p>
+  </div>
+</div>
+
+<div class="section-body section-non-alcoholic-content">
+  <div class="container">
+    <div class="row">
+      {{#each beverage.drinks}}
+        {{> beverage-drink-item}}
+      {{/each}}
+    </div>
+  </div>
+</div>

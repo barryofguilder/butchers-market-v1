@@ -1,0 +1,16 @@
+<div class="section-description">
+  <div class="container">
+    <h2>Wine</h2>
+    <p>Regardless of your taste in wine, we have a wine in stock that will suite your flavor and meal.</p>
+  </div>
+</div>
+
+<div class="section-body section-wine-content">
+  <div class="container">
+    <div class="row">
+      {{#each beverage.wines}}
+        {{> beverage-wine-item}}
+      {{/each}}
+    </div>
+  </div>
+</div>

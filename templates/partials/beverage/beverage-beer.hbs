@@ -1,0 +1,16 @@
+<div class="section-description">
+  <div class="container">
+    <h2>Beer</h2>
+    <p>Micro brews, macro brews, imported, domestic, locally brewed, bottled, canned, on tap, growlers... you get the drift. We have a beer just for you!</p>
+  </div>
+</div>
+
+<div class="section-body section-beer-content">
+  <div class="container">
+    <div class="row">
+      {{#each beverage.beers}}
+        {{> beverage-beer-item}}
+      {{/each}}
+    </div>
+  </div>
+</div>

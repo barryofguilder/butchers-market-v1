@@ -1,0 +1,106 @@
+beers:
+  - title: New Belgium "Fat Tire"
+    image: images/fattire.jpg
+    description:
+    link: http://www.newbelgium.com/beer/detail.aspx?id=7c5b394b-d7b7-486a-ac9a-316256a7b0ee
+
+  - title: Spencer Trappist Ale
+    image: images/spencer.jpg
+    description:
+    link: http://spencerbrewery.com
+
+  - title: Red Hare Brewery "Long Day Lager"
+    image: images/redharelongday.jpg
+    description:
+    link: http://www.redharebrewing.com/beers/long-day-lager/
+
+  - title: Jail House Brewing "Mugshot IPA"
+    image: images/mugshot.jpg
+    description:
+    link: https://www.jailhousebrewing.com/the_beers
+
+  - title: Jekyll Brewing "Merican"
+    image: images/merican.jpg
+    description:
+    link: http://www.jekyllbrewing.com/beers.html
+
+  - title: Mckenzies Hard Cider "Seasonal Reserve"
+    image: images/seasonalreserve.jpg
+    description:
+    link: http://www.mckenziesbeverages.com/varieties/
+
+  - image: images/fridge.png
+
+  - title: Eagle Creek Brewery "Spot Tail Blonde Ale"
+    image: images/eaglecreek.jpg
+    description:
+    link: "http://www.eaglecreekbrewingco.com/#!our-brew/ccfx"
+
+  - title: Fannin County Brewing Company "Moonlight Harvest Porter"
+    image: images/fannincounty.jpg
+    description:
+    link: "http://www.fanninbrewingcompany.com/#!seasonal-beers/czc9"
+
+
+wines:
+  - title: 2011 adaj cabernet sauvignon"
+    image: images/adaj.jpg
+    description:
+    link: http://adajwines.com/wine1/
+
+  - title: Carnivore Cabernet Sauvignon
+    image: images/carnivore.jpg
+    description:
+    link: http://www.carnivorcabernet.com
+
+  - title: Muscadry Georgia Muscadine
+    image: images/muscadry.jpg
+    description:
+    link: "http://www.chateauelan.com/menu-winery/menu-wine-list.html#.VOJnCVPF-Qw"
+
+  - title: Georgia Winery "Bulldog Red"
+    image: images/bulldog.jpg
+    description:
+    link: http://www.georgiawines.com/bulldogred
+
+  - title: Liberty Creek Pink Moscato
+    image: images/libertypink.jpg
+    description:
+    link: http://www.libertycreekwine.com/our-wines.php
+
+  - title: Francis Coppola "Diamond Red Blend"
+    image: images/coppolared.jpg
+    description:
+    link: https://www.francisfordcoppolawinery.com/wine/diamond/red-blend
+
+
+drinks:
+  - title: Red Hare Brewing Sugar Cane Rootbeer (on tap)
+    image: images/redhare.jpg
+    description:
+    link: http://www.redharebrewing.com/beers/root-beer
+
+  - title: Boylan's Bottling Root Beer
+    image: images/boylansrootbeer.jpg
+    description:
+    link: https://www.boylanbottling.com
+
+  - title: Boylan's Bottling Orange Cream Soda
+    image: images/boylansorangecream.jpg
+    description:
+    link: https://www.boylanbottling.com
+
+  - title: Boylan's Bottling Shirley Temple
+    image: images/boylansshirley.jpg
+    description:
+    link: https://www.boylanbottling.com
+
+  - title: Boylan's Bottling Cream Soda
+    image: images/boylanscreme.jpg
+    description:
+    link: https://www.boylanbottling.com
+
+  - title: Boylan's Bottling Cane Cola
+    image: images/boylanscane.jpg
+    description:
+    link: https://www.boylanbottling.com
