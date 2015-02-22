@@ -1,0 +1,40 @@
+<div class="section section-catering">
+  <div class="section-title">
+    <div class="container">
+      <h1>CATERING</h1>
+    </div>
+  </div>
+
+  <div class="section-description">
+    <div class="container">
+      <div class="section-tagline">
+        <h2>Cater your own event!</h2>
+        <p>Make hosting easier... let us do the hard work for you!</p>
+        <p><a href="images/bmpartyplatters.pdf" class="btn btn-primary">Veiw Printable Flyer</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-body section-catering-content">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="row">
+            {{#each deli.platters}}
+              {{> deli-catering-item}}
+            {{/each}}
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            {{#each deli.feastItems}}
+              {{> deli-feast-item}}
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

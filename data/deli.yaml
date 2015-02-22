@@ -1,0 +1,136 @@
+items:
+  - title: Rotisserie Chicken Salad
+    image: images/rotisserie.jpg
+    description: main ingredients - grapes, pecans
+
+  - title: Hawiian Chicken Salad
+    image: images/holiday.jpg
+    description: main ingredients - pinneapple, raisin, almonds
+
+  - title: Traditional Chicken Salad
+    image: images/traditional.jpg
+    description: main ingredients - pimientos, tomatoes, carrots
+
+  - title: Olive Salad
+    image: images/olive.jpg
+    description: main ingredients - assorted olives, garlic, cocktail onions, assorted peppers, pimientos
+
+  - title: Greek Pasta Salad
+    image: images/greek.jpg
+    description: main ingredients - penne pasta, olives, tomatoes, fetta cheese, italian dressing
+
+  - title: Itatlian Pasta Salad
+    image: images/italian-pasta.jpg
+    description: main ingredients - tri-color rotini pasta, pepperoni, salami, chicken, bleu cheese, mozzarella cheese, italian dressing
+
+  - title: Pimiento Cheese
+    image: images/pimento.jpg
+    description:
+
+  - title: Fresh Salsa
+    image: images/salsa.jpg
+    description:
+
+  - title: Broccoli Salad
+    image: images/broccoli.jpg
+    description: main ingredients - broccoli, cauliflower, tomatoes, red onion, ranch dressing
+
+  - title: Cole Slaw
+    image: images/slaw.jpg
+    description:
+
+  - title: Hot Slaw
+    image: images/hot-slaw.jpg
+    description:
+
+  - title: Bacon Ranch Potato Salad
+    image: images/potato-salad.jpg
+    description:
+
+  - title: Corn Salad
+    image: images/corn.jpg
+    description:
+
+  - title: Baked Beans
+    image: images/beans.jpg
+    description:
+
+  - title: Pulled Pork BBQ
+    image: images/bbq.jpg
+    description:
+
+  - title: Smoked Baby Back Ribs
+    image: images/ribs.jpg
+    description:
+
+  - title: Smoked Whole Chicken
+    image: images/chicken.jpg
+    description:
+
+  - title: Smoked Chicken Breast
+    image: images/chicken-breast.jpg
+    description:
+
+  - title: Original Twice Baked Potato
+    image: images/original-potato.jpg
+    description: main ingredients - milk, butter, sour cream, cheddar cheese, chives
+
+  - title: Bacon Twice Baked Potato
+    image: images/bacon-potato.jpg
+    description: main ingredients - bacon, milk, butter, sour cream, cheddar cheese, chives
+
+  - title: Garlic Twice Baked Potato
+    image: images/garlic-potato.jpg
+    description: main ingredients - garlic, milk, butter, sour cream, cheddar cheese, chives
+
+  - title: Chipotle Twice Baked Potato
+    image: images/chipotle-potato.jpg
+    description: main ingredients - chipotle pepper, milk, butter, sour cream, cheddar cheese, chives
+
+  - title: Twice Baked Sweet Potato
+    image: images/sweet-potato.jpg
+    description:
+
+
+platters:
+  - title: Deli Meat Platters
+    image: images/meat-platter.jpg
+    list: Small (8-12 person) $39.99;Medium (12-16 person) $48.99;Large(16-20 person) 56.99
+
+  - title: Cheese Platters
+    image: images/cheese-platter.jpg
+    list: Small (8-12 person) $29.99;Medium (12-16 person) $34.99;Large(16-20 person) 39.99
+
+  - title: Meat & Cheese Platters
+    image: images/meat-cheese-platter.jpg
+    list: Small (8-12 person) $36.99;Medium (12-16 person) $42.99;Large(16-20 person) 49.99
+
+  - title: Salad Platters
+    image: images/salad-platter.jpg
+    list: Small (8-12 person) $36.99;Medium (12-16 person) $42.99;Large(16-20 person) 49.99
+
+  - title: Veggies Platters
+    image: images/veggie-platter.jpg
+    list: Small (8-12 person) $34.99;Medium (12-16 person) $39.99;Large(16-20 person) 44.99
+
+  - title: Sandwich Platters
+    image: images/sandwich-platter.jpg
+    list: Small (8-12 person) $36.99;Medium (12-16 person) $42.99;Large(16-20 person) 49.99
+
+
+feastItems:
+  - title: Family Meal - Pulled Pork BBQ w/ two sides
+    image: images/salads.png
+    list: $21.99;$55.99;$83.99;$111.99
+
+  - title: Family Meal - BBQ Sandwiches w/ two sides
+    image: images/salads.png
+    list: $18.99;$47.99;$71.99;$95.99
+
+  - title: Family Meal - Baby Back Ribs w/ two sides
+    image: images/salads.png
+    list: $32.99;$82.99;$124.99;$166.99
+
+  - title: Family Meal - Smoked Chicken Breast w/ two sides
+    image: images/breastmeal.jpg
+    list: $27.99;$78.99;$118.99;$157.99

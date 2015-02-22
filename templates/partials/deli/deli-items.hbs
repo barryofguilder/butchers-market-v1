@@ -1,0 +1,16 @@
+<div class="section-description">
+  <div class="container">
+    <h2>Fresh Made Everything!</h2>
+    <p>Everything in our deli is made in-house from scratch to acheive a quality and freshness like no other store can provide. Below are some of the items you  will commonly find &amp; enjoy!</p>
+  </div>
+</div>
+
+<div class="section-body section-deli-content">
+  <div class="container">
+    <div class="row">
+      {{#each deli.items}}
+        {{> deli-item}}
+      {{/each}}
+    </div>
+  </div>
+</div>
