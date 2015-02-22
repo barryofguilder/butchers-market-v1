@@ -2,30 +2,52 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    // Specifies all the paths that will be used in this file
+    paths: {
+      // Destination location for the builds
+      dest: 'build'
+    },
+
+    assemble: {
+      options: {
+        assets: '<%= paths.dest %>',
+        data: 'data/**/*.yaml',
+        layout: 'templates/layouts/default.hbs',
+        partials: ['templates/partials/**/*.hbs']
+      },
+      site: {
+        options: {
+          flatten: true
+        },
+        src: ['templates/pages/**/*.hbs'],
+        dest: '<%= paths.dest %>'
+      }
+    },
+
     'cache-busting': {
       options: {
         cleanup: true
       },
       css: {
-        replace: ['build/**/*.html'],
+        replace: ['<%= paths.dest %>/**/*.html'],
         replacement: 'bm-styles.css',
-        file: 'build/css/bm-styles.css'
+        file: '<%= paths.dest %>/css/bm-styles.css'
       },
       scriptsApp: {
-        replace: ['build/**/*.html'],
+        replace: ['<%= paths.dest %>/**/*.html'],
         replacement: 'bm-scripts.js',
-        file: 'build/js/bm-scripts.js'
+        file: '<%= paths.dest %>/js/bm-scripts.js'
       },
       scriptsVendor: {
-        replace: ['build/**/*.html'],
+        replace: ['<%= paths.dest %>/**/*.html'],
         replacement: 'vendor-scripts.js',
-        file: 'build/js/vendor-scripts.js'
+        file: '<%= paths.dest %>/js/vendor-scripts.js'
       }
     },
 
     clean: {
       build: {
-        src: ['build/**/*']
+        src: ['<%= paths.dest %>/**/*']
       }
     },
 
@@ -33,7 +55,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           livereload: true,
-          base: 'build',
+          base: '<%= paths.dest %>',
           open: {
             appName: 'Google Chrome'
           }
@@ -50,7 +72,7 @@ module.exports = function(grunt) {
           'js/app.js',
           'js/app/**/*.js'
         ],
-        dest: 'build/js/bm-scripts.js'
+        dest: '<%= paths.dest %>/js/bm-scripts.js'
       },
       vendor: {
         src: [
@@ -74,7 +96,7 @@ module.exports = function(grunt) {
           // jQuery Visible
           'bower_components/jquery-visible/jquery.visible.js'
         ],
-        dest: 'build/js/vendor-scripts.js',
+        dest: '<%= paths.dest %>/js/vendor-scripts.js',
       },
     },
 
@@ -86,24 +108,18 @@ module.exports = function(grunt) {
       },
       fonts: {
         files: [
-          {expand: true, flatten: true, src: ['bower_components/bootstrap/fonts/*.*'], dest: 'build/fonts'},
-          {expand: true, src: ['fonts/*.*'], dest: 'build'}
-        ]
-      },
-      html: {
-        files: [
-          {expand: true, src: ['*.html'], dest: 'build'},
-          {expand: true, src: ['components/**/*.html'], dest: 'build'}
+          {expand: true, flatten: true, src: ['bower_components/bootstrap/fonts/*.*'], dest: '<%= paths.dest %>/fonts'},
+          {expand: true, src: ['fonts/*.*'], dest: '<%= paths.dest %>'}
         ]
       },
       images: {
         files: [
-          {expand: true, src: ['images/**/*.*'], dest: 'build'}
+          {expand: true, src: ['images/**/*.*'], dest: '<%= paths.dest %>'}
         ]
       },
       php: {
         files: [
-          {expand: true, src: ['server/**/*.php'], dest: 'build'}
+          {expand: true, src: ['server/**/*.php'], dest: '<%= paths.dest %>'}
         ]
       }
     },
@@ -148,14 +164,14 @@ module.exports = function(grunt) {
     less: {
       development: {
         src: 'less/bm-styles.less',
-        dest: 'build/css/bm-styles.css'
+        dest: '<%= paths.dest %>/css/bm-styles.css'
       },
       production: {
         options: {
           cleancss: true
         },
         src: 'less/bm-styles.less',
-        dest: 'build/css/bm-styles.css'
+        dest: '<%= paths.dest %>/css/bm-styles.css'
       }
     },
 
@@ -164,12 +180,12 @@ module.exports = function(grunt) {
         report: 'min'
       },
       app: {
-        src: 'build/js/bm-scripts.js',
-        dest: 'build/js/bm-scripts.js'
+        src: '<%= paths.dest %>/js/bm-scripts.js',
+        dest: '<%= paths.dest %>/js/bm-scripts.js'
       },
       vendor: {
-        src: 'build/js/vendor-scripts.js',
-        dest: 'build/js/vendor-scripts.js'
+        src: '<%= paths.dest %>/js/vendor-scripts.js',
+        dest: '<%= paths.dest %>/js/vendor-scripts.js'
       }
     },
 
@@ -184,9 +200,16 @@ module.exports = function(grunt) {
           spawn: false
         }
       },
-      html: {
-        files: ['*.html', 'components/**/*.html'],
-        tasks: ['copy:html'],
+      data: {
+        files: ['data/**/*.yaml'],
+        tasks: ['assemble'],
+        options: {
+          spawn: false
+        }
+      },
+      handlebars: {
+        files: ['templates/**/*.hbs'],
+        tasks: ['assemble'],
         options: {
           spawn: false
         }
@@ -215,6 +238,7 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-cache-busting');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -226,6 +250,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('default', ['clean:build', 'less:development', 'jshint', 'concat', 'copy', 'connect', 'watch']);
-  grunt.registerTask('build', ['clean:build', 'less:production', 'concat', 'imagemin', 'copy', 'uglify', 'cache-busting']);
+  grunt.registerTask('default', ['clean:build', 'less:development', 'jshint', 'concat', 'assemble', 'copy', 'connect', 'watch']);
+  grunt.registerTask('build', ['clean:build', 'less:production', 'concat', 'imagemin', 'assemble', 'copy', 'uglify', 'cache-busting']);
 };

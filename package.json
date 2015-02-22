@@ -2,6 +2,7 @@
   "name": "butchers-market",
   "version": "1.0.0",
   "devDependencies": {
+    "assemble": "^0.4.42",
     "bower": "^1.3.12",
     "grunt": "^0.4.5",
     "grunt-cache-busting": "^0.0.11",
