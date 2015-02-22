@@ -1,0 +1,19 @@
+<div class="section-description">
+  <div class="container">
+    <div class="section-tagline">
+      <h2>Bundle packs!</h2>
+      <p>We have a package for every household &amp; budget!</p>
+      <p><a href="images/bmpackages.pdf" class="btn btn-primary">Veiw Printable Flyer</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="section-body section-meat-bundles">
+  <div class="container">
+    <div class="row">
+      {{#each meat.bundles}}
+        {{> meat-bundle}}
+      {{/each}}
+    </div>
+  </div>
+</div>

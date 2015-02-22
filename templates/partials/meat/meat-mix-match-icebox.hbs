@@ -1,0 +1,47 @@
+<div class="section-description">
+  <div class="container">
+    <div class="section-tagline">
+      <h2>Ice Box Mix N' Match</h2>
+      <p>Fill your freezer with quick, easy, and affordable side items and instant meals!</p>
+      <p><a href="{{assets}}/images/bmpackages.pdf" class="btn btn-primary">Veiw Printable Flyer</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="section-body section-meat-ice-mix-match">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <ul class="pick-list">
+          {{#each meat.mixMatchIceboxPrices}}
+            <li class="h3">{{title}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul>
+          {{#each meat.mixMatchIceboxItems1}}
+            <li>{{title}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul>
+          {{#each meat.mixMatchIceboxItems2}}
+            <li>{{title}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul>
+          {{#each meat.mixMatchIceboxItems3}}
+            <li>{{title}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

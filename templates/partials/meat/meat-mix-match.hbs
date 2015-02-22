@@ -1,0 +1,39 @@
+<div class="section-description">
+  <div class="container">
+    <div class="section-tagline">
+      <h2>Mix N' Match</h2>
+      <p>Build your own package</p>
+      <p><a href="{{assets}}/images/bmpackages.pdf" class="btn btn-primary">Veiw Printable Flyer</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="section-body section-meat-mix-match">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <ul class="pick-list">
+          {{#each meat.mixMatchPrices}}
+            <li class="h3">{{title}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="col-sm-4">
+        <ul>
+          {{#each meat.mixMatchItems1}}
+            <li>{{title}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="col-sm-4">
+        <ul>
+          {{#each meat.mixMatchItems2}}
+            <li>{{title}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,148 @@
+bundles:
+  - title: 20lb Bundle Pack
+    price: $75
+    image: images/bundles.jpg
+    list: 5 lbs. Fresh Ground Chuck;5 lbs. Boneless Pork Chops;5 lbs. Boston Butt Pork Roast;5 lbs. Boneless Chicken Breasts
+
+  - title: 30lb Bundle Pack
+    price: $88
+    image: images/bundles.jpg
+    list: 5 lbs. Fresh Ground Chuck;3 ½ lbs. Boneless Pork Chops;4 lbs. Country Style Pork Ribs;2 ½ lbs. Market Style Bacon;5 lbs. Boneless Chicken Breasts;10 lbs. Chicken Leg Quarters
+
+  - title: 40lb Bundle Pack
+    price: $119
+    image: images/bundles.jpg
+    list: 4 lbs. Beef Chuck Roast;10 lbs. Fresh Ground Chuck;5 lbs. Boneless Pork Chops;5 lbs. Boston Butt Pork Roast;6 lbs. Bone-In Chicken Breasts;10 lbs. Chicken Leg Quarters
+
+  - title: 50lb Bundle Pack
+    price: $149
+    image: images/bundles.jpg
+    list: 10 lbs. Fresh Ground Chuck;10 lbs. Boneless Pork Chops;10 lbs. Country Style Pork Ribs;10 lbs. Boneless Chicken Breasts;10 lbs. Chicken Leg Quarters
+
+  - title: 75lb Bundle Pack
+    price: $269
+    image: images/bundles.jpg
+    list: 4 (7 oz.) Beef Ribeye Steaks;4 (7 oz.) Beef N.Y. Strip Steaks;2 lbs. Beef Chuck Roast;2 lbs. Beef Cubed Steak;2 lbs. Beef Stew Meat;10 lbs. Beef Ground Chuck;10 lbs. Boneless Pork Chops;5 lbs. Boston Butt Pork Roast;4 lbs. Country Style Pork Ribs;3 lbs. Pork Sausage;2 ½ lbs. Sliced Smoked Bacon;10 lbs. Boneless Chicken Breasts;6 lbs. Bone-In Chicken Breasts;10 lbs. Chicken Leg Quarters;5 lbs. Chicken Wings
+
+  - title: 100lb Bundle Pack
+    price: $348
+    image: images/100lb.jpg
+    list: 10 lbs. Beef Chuck Roast;20 lbs. Fresh Ground Chuck;10 lbs. Boneless Pork Chops;10 lbs. Country Style Pork Ribs;10 lbs. Boston Butt Pork Roast;10 lbs. Pork Sausage;10 lbs. Sliced Smoked Bacon;10 lbs. Boneless Chicken Breasts;10 lbs. Chicken Leg Quarters
+
+  - title: 200lb Bundle Pack
+    price: $668
+    image: images/bundles.jpg
+    list: 10 lbs. Beef Chuck Roast;4 lbs. Beef Cubed Steak;4 lbs. Beef Stew Meat;30 lbs. Beef Ground Chuck;20 lbs. Boneless Pork Chops;20 lbs. Country Style Pork Ribs;20 lbs. Boston Butt Pork Roast;10 lbs. Pork Sausage;10 lbs. Sliced Smoked Bacon;30 lbs. Boneless Chicken Breasts;13 lbs. Bone-In Chicken Breasts;5 lbs. Chicken Wings;20 lbs. Chicken Leg Quarters;4 lbs. Peeled Cooked Shrimp
+
+  - title: Mega Bundle Pack
+    price: $124
+    image: images/bundles.jpg
+    list: 2 (7 oz) Beef Ribeye Steaks;2 (7 oz) Beef N.Y. Strip Steaks;2 lbs. Beef Chuck Roast ;2 lbs. Beef Cube Steak;5 lbs. Beef Ground Chuck;5 lbs. Boneless Pork Chops;3 lbs. Pork Sausage;2 ½ lbs. Sliced Slab Bacon;10 lbs. Split Chicken Breast
+
+  - title: "#1 Bundle Pack"
+    price: $69
+    image: images/bundles.jpg
+    list: 4 (7oz) Beef Ribeye Steaks;2 lbs. Beef Cube Steaks ;5 lbs. Beef Ground Chuck;2 ½ lbs. Boneless Pork Chops;3 lbs. Split Chicken Breasts
+
+  - title: "#2 Bundle Pack"
+    price: $69
+    image: images/bundles.jpg
+    list: 4 (7oz) Beef N.Y. Strip Steaks;2 lbs. Beef Stew;5 lbs. Beef Ground Chuck;2 ½ lbs. Boneless Chicken Breast ;2 ½ lbs. Boneless Pork Chops
+
+
+mixMatchPrices:
+  - title: Pick 5 for $53
+  - title: Pick 10 for $99
+  - title: Pick 20 for $195
+
+mixMatchItems1:
+  - title: 2 (7 oz.) Beef Ribeye Steaks
+  - title: 2 (7 oz.) Beef N.Y. Strip Steaks
+  - title: 2 lbs. Beef Chuck Roast
+  - title: 2 lbs. Beef Sirloin Tip Roast
+  - title: 2 lbs. Beef Cube Steaks
+  - title: 2 lbs. Beef Stew
+  - title: 2 ¼ lbs. Beef Ground Chuck
+  - title: 2 lbs. Beef Ground Round
+  - title: 2 ½ lbs. Boneless Pork Chops
+  - title: 5 lbs. Boston Butt Pork Roast
+  - title: 4 lbs. Country Style Pork Ribs
+  - title: 2 ½ lbs. Baby Back Pork Ribs
+  - title: 3 lbs. Fresh Made Pork Sausage
+  - title: 3 lbs. Bratwurst or Italian Sausages
+
+mixMatchItems2:
+  - title: 3 lbs. Smoked Pork Sausage
+  - title: 2 ½ lbs. Sliced Slab Bacon
+  - title: 2 ½ lbs. Boneless Chicken Breast
+  - title: 2 ½ lbs. Boneless Chicken Tenders
+  - title: 4 ½ lbs. Split Chicken Breast
+  - title: 10 lbs. Chicken Leg Quarters
+  - title: 5 lbs. Chicken Wings
+  - title: 2 ½ lbs. Breaded Chicken Hot Wings
+  - title: 3 lbs. Breaded Chicken Strips
+  - title: 2 Cornish Game Hens
+  - title: 4 lbs. Tilapia or Swai Fish Fillets
+  - title: 2 lbs. Peeled Cooked or Raw Shrimp
+  - title: 5 lbs. Cooked Whole Crawfish
+  - title: 2 lbs. Frog Legs
+
+
+mixMatchIceboxPrices:
+  - title: Pick 5 for $19.99
+  - title: Pick 10 for $37.99
+  - title: Pick 20 for $75.99
+
+mixMatchIceboxItems1:
+  - title: Spicy Chicken Tenders
+  - title: Breaded Chicken Hot Wings
+  - title: Boneless Buffalo Wings
+  - title: Pop Corn Chicken
+  - title: Breaded Chicken Nuggets
+  - title: Beef Steak Fritter
+  - title: Pork Chop Fritter
+  - title: Meatballs
+  - title: Corndogs
+  - title: Mini Corndogs
+  - title: Sausage Biscuits
+  - title: Cheeseburger Sliders
+  - title: Chicken Sliders
+  - title: Chicken Tamales
+  - title: Shrimp Poppers
+  - title: Breaded Fish Sticks
+
+mixMatchIceboxItems2:
+  - title: Pepperoni Pizzas
+  - title: Supreme Pizzas
+  - title: Shoestring Fries
+  - title: Steak Cut Fries
+  - title: Straight Cut Fries
+  - title: Seasoned Fries
+  - title: Waffle Fries
+  - title: Crinkle Cut Fries
+  - title: Tater Bucks
+  - title: Seasoned Potato Wedges
+  - title: Sweet Potato Fries
+  - title: Mixed Vegetables
+  - title: California Blend Mix Vegetables
+  - title: Cut Green Beans
+  - title: Breaded Okra
+  - title: Sliced Yellow Squash
+
+mixMatchIceboxItems3:
+  - title: Corn on the Cob
+  - title: Onion Rings
+  - title: Hush Puppies
+  - title: Crab Cakes
+  - title: Yeast Rolls
+  - title: Garlic Cheese Breadstick
+  - title: Fettuccini Alfredo
+  - title: Lasagna w/ Meat Sauce
+  - title: Meatloaf w/ Potatoes & Sauce
+  - title: Mac & Cheese Entree
+  - title: Southern Style Biscuits
+  - title: Waffles
+  - title: Buttermilk Pancakes
+  - title: French Toast Sticks
+  - title: Cinnamon Rolls
+  - title: Hashbrowns
