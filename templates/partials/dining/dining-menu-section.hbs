@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+
+{{#each items}}
+  {{#if title}}
+    <h3>{{title}}</h3>
+  {{/if}}
+  <p>{{description}}{{#if price}}... {{price}}{{/if}}</p>
+
+  {{#if items}}
+    <ul>
+      {{#each items}}
+        <li>{{title}} - {{price}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+{{/each}}

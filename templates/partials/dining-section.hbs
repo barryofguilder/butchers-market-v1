@@ -17,7 +17,23 @@
   <div class="section-body section-dining-content">
     <div class="container">
       <div class="row">
-        TODO: Add all the menu items here...
+        <div class="col-md-4">
+          {{#each dining.menuSections1}}
+            {{> dining-menu-section}}
+          {{/each}}
+        </div>
+
+        <div class="col-md-4">
+          {{#each dining.menuSections2}}
+            {{> dining-menu-section}}
+          {{/each}}
+        </div>
+
+        <div class="col-md-4">
+          {{#each dining.menuSections3}}
+            {{> dining-menu-section}}
+          {{/each}}
+        </div>
       </div>
     </div>
   </div>
