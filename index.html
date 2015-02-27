@@ -34,12 +34,15 @@
 
               <div class="col-sm-6 info-column store-hours">
                 <strong>Store Hours</strong>
+                <div id="normal">
+                </div>
                 <!-- <span>Monday - Saturday:</span>
                 <span>9:00am - 6:00pm</span>
                 <span>Sunday: Closed</span> -->
 
-                <span>9-6 Mon-Sat</span>
-                <span class="special-comment"><font color="red">ATTENTION:</font> We will retain normal business hours regardless of the weather. However, for the safety of others and yourself please do not needlessly drive in any un-safe conditions. (We live close enough to walk here so we are also following this advice.)</span>
+                <!-- <span>9-6 Mon-Sat</span>
+                <span class="special-comment"><font color="red">ATTENTION:</font> We will retain normal business hours Wednesday and Thursday regardless of the weather. However, for the safety of others and yourself please do not needlessly drive in any un-safe conditions. (We live close enough to walk here so we are also following this advice.)</span> -->
+
               </div>
             </div>
           </div>
@@ -61,6 +64,8 @@
         </div>
       </div>
     </div>
+
+
 
     <nav class="secondary-navigation">
       <div class="container">
@@ -152,7 +157,7 @@
             <div class="col-xs-6 col-sm-4 col-md-3">
               <div class="meat-bundle-item deli-item">
                 <div class="deli-image-container">
-                  <img src="images/bundles.jpg" class="img-responsive img-rounded">
+                  <img src="images/20lb.jpg" class="img-responsive img-rounded">
                   <a href="#" class="item-info-btn deli-item-btn" data-item-list="5 lbs. Fresh Ground Chuck;5 lbs. Boneless Pork Chops;5 lbs. Boston Butt Pork Roast;5 lbs. Boneless Chicken Breasts">
                     <span class="glyphicon glyphicon-zoom-in"></span>
                     More Info
@@ -178,7 +183,7 @@
             <div class="col-xs-6 col-sm-4 col-md-3">
               <div class="meat-bundle-item deli-item">
                 <div class="deli-image-container">
-                  <img src="images/bundles.jpg" class="img-responsive img-rounded">
+                  <img src="images/40lb.jpg" class="img-responsive img-rounded">
                   <a href="#" class="item-info-btn deli-item-btn" data-item-list="4 lbs. Beef Chuck Roast;10 lbs. Fresh Ground Chuck;5 lbs. Boneless Pork Chops;5 lbs. Boston Butt Pork Roast;6 lbs. Bone-In Chicken Breasts;10 lbs. Chicken Leg Quarters">
                     <span class="glyphicon glyphicon-zoom-in"></span>
                     More Info
@@ -1470,6 +1475,38 @@
 
     <script src="js/vendor-scripts.js"></script>
     <script src="js/bm-scripts.js"></script>
+    <script>
+
+     $(function() {
+        var hours = $("#normal");
+
+        if (hours.length > 0) {
+          populateHours(hours, 'components/hours/default.html');
+        }
+
+        var md = $("#memorial-day");
+
+        if (md.length > 0) {
+          populateHours(md, 'components/hours/memorial-day.html');
+        }
+
+        var christmas = $("#christmas");
+
+        if (christmas.length > 0) {
+          propulateHours(christmas, 'components/hours/christmas.html');
+        }
+
+        function populateHours(element, htmlUrl) {
+          $.ajax({
+            url: htmlUrl,
+            success: function(html) {
+              element.html(html);
+            }
+          });
+        }
+      });
+
+    </script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
