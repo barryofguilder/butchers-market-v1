@@ -29,6 +29,7 @@
                 <strong>Quick Links</strong>
                 <span><a href="images/bmpackages.pdf">Bundle Packages</a></span>
                 <span><a href="images/bmmenu.pdf">Dining Menu</a></span>
+                <span><a  id="glf-restaurant-order-online-nav" href="#">Online Meal Ordering</a></span>
                 <span></span>
               </div>
 
@@ -998,9 +999,19 @@
       </div>
       <div class="section-description">
         <div class="container">
+        <div class="row">
+        <div class="col-md-6"
         <div class="section-tagline">
           <p>Stop in, take a load off, and have some lunch!  OR... Stop in after work and take some dinner home for your family.</p>
           <p><a href="images/bmmenu.pdf" class="btn btn-primary">Veiw Printable Menu</a></p>
+          </div>
+          <div class="col-md-6">
+          <p>You can now place your dine-in and take out orders online, which is our preferred method for large &amp; complex orders. Please note: Your order is not complete until you see and order confirmation.</p>
+          <!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
+            <span class="btn btn-primary" id="glf-restaurant-order-online-btn">Order Online</span>
+
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -1033,8 +1044,8 @@
                 <li>burger - $7.95</li>
                 <li>combo (Zapp's® kettle cooked potato chips &amp; Drink) - $9.79</li>
               </ul>
-              <h3>Duck Burger</h3>
-              1/3. of ground duck with choice of Boar’s Head Brand® asiago cheese and condiments
+              <h3>Elk Burger</h3>
+              1/3 lb. of ground elk with choice of Boar’s Head Brand® cheese and condiments
               <ul>
                 <li>burger - $7.95</li>
                 <li>combo (Zapp's® kettle cooked potato chips &amp; Drink) - $9.79</li>
@@ -1079,11 +1090,11 @@
                <h3>Philly Cheesesteak Sandwich</h3>
               shaved ribeye served hot & pressed on brioche bun with Boar’s Head Brand® provolone cheese, grilled onions, and grilled pablano pepper
               <ul>
-                <li>Sandwich - $5.95</li>
-                <li>Combo (Zapp's® kettle cooked potato chips &amp; Drink) - $7.79</li>
+                <li>Sandwich - $7.95</li>
+                <li>Combo (Zapp's® kettle cooked potato chips &amp; Drink) - $9.79</li>
               </ul>
               <h3>BBQ Sandwich</h3>
-              made in-house smoked pulled pork shoulder served hot & pressed on brioche bun with dill pickle, and homemade BBQ sauce
+              made in-house smoked pulled pork shoulder served on brioche bun with dill pickle, and homemade BBQ sauce
               <ul>
                 <li>Sandwich - $5.95</li>
                 <li>Combo (Zapp's® kettle cooked potato chips &amp; Drink) - $7.79</li>
@@ -1097,8 +1108,8 @@
               <h3>Prime Rib Croissant</h3>
               made in-house prime rib served hot on croissant with Boar’s Head Brand® horseradish cheese and choice of condiments
               <ul>
-                <li>Sandwich - $5.95</li>
-                <li>Combo (Zapp's® kettle cooked potato chips &amp; Drink) - $7.79</li>
+                <li>Sandwich - $7.95</li>
+                <li>Combo (Zapp's® kettle cooked potato chips &amp; Drink) - $9.79</li>
               </ul>
                  <h3>Pimiento Cheese Croissant</h3>
               Our homemade pimiento cheese served on croissant
@@ -1150,6 +1161,9 @@
               Your choice of one our made in-house twice baked potatoes topped w/ shredded cheddar cheese... $2.95
               <h3>BBQ Loaded Twice Baked Potato</h3>
               Your choice of one our made in-house twice baked potatoes topped w/ smoked pulled pork shoulder & shredded cheddar cheese ... $4.95
+              <h1>Soups</h1>
+              <h3>Brunswick Stew</h3>
+              A cup of our homemade hearty stew with shredded beef, pork and chicken and some spice! ... $3.95
               <h1>Steaks</h1>
               <h3>Ribeye</h3>
               7 oz. Certified Angus Beef® brand ribeye steak served with made in-house twice baked potato
@@ -1521,7 +1535,11 @@
 
   ga('create', 'UA-59988645-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+<script> (function(w,d,s,id,h,bid,cuid) { var js,fjs=d.getElementsByTagName(s)[0], l=function(){glfWidget(h,[bid],cuid); d.getElementById(bid).removeAttribute('id');}, b=function(s){s.addEventListener?s.addEventListener('load',l,false):s.attachEvent("onload", l);}; if(!(js=d.getElementById(id))){ js=d.createElement(s);js.id=id;js.src=h+"widget/js/ewm.js"; b(js);fjs.parentNode.insertBefore(js,fjs); }else if(!w.glfWidget) b(js); else l(); }(window,document,'script','glf-embedder-js',"https://www.foodbooking.com/","glf-restaurant-order-online-nav","8b161339-3e9b-47f0-9aa1-3242481db243"));
+
+(function(w,d,s,id,h,bid,cuid) { var js,fjs=d.getElementsByTagName(s)[0], l=function(){glfWidget(h,[bid],cuid); d.getElementById(bid).removeAttribute('id');}, b=function(s){s.addEventListener?s.addEventListener('load',l,false):s.attachEvent("onload", l);}; if(!(js=d.getElementById(id))){ js=d.createElement(s);js.id=id;js.src=h+"widget/js/ewm.js"; b(js);fjs.parentNode.insertBefore(js,fjs); }else if(!w.glfWidget) b(js); else l(); }(window,document,'script','glf-embedder-js',"https://www.foodbooking.com/","glf-restaurant-order-online-btn","8b161339-3e9b-47f0-9aa1-3242481db243")); </script>
+
   </body>
 </html>
