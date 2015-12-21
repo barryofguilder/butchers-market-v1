@@ -2,7 +2,7 @@
   "name": "butchers-market",
   "version": "1.0.0",
   "dependencies": {
-    "bootstrap": "~3.3.2",
+    "bootstrap": "~3.3.5",
     "jquery": "~1.11.1",
     "jquery-visible": "https://github.com/customd/jquery-visible.git#1.0.0"
   }
